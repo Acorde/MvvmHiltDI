@@ -8,17 +8,17 @@ import androidx.room.PrimaryKey
 data class BlogCacheEntity(
     @PrimaryKey(autoGenerate = false)
     @ColumnInfo(name = "id")
-    val id: Int,
+    val id: Int?,
 
     @ColumnInfo(name = "title")
-    val title: String,
+    val title: String?,
 
     @ColumnInfo(name = "body")
-    val body: String,
+    val body: String?,
 
     @ColumnInfo(name = "image")
-    val image: String,
+    val image: String?,
 
     @ColumnInfo(name = "category")
-    val category: String
+    val category: String?
 )
